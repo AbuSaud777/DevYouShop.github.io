@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>DevYou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>DevYou</h1>
+  <p>متجر المنتجات الرقمية</p>
+</header>
+
+<!-- ميزات المتجر -->
+<section class="features">
+  <div>⚡ تسليم فوري</div>
+  <div>🔒 دفع آمن</div>
+  <div>💬 دعم سريع</div>
+</section>
+
+<!-- المنتجات -->
+<section class="products">
+  <h2>منتجاتنا</h2>
+  <div class="product">
+    <h3>منتج Roblox</h3>
+    <button onclick="showProduct('product1.png')">شراء الآن</button>
+  </div>
+</section>
+
+<!-- نافذة عرض الصورة -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">✖</span>
+  <img id="modalImg">
+</div>
+
+<!-- القسم السري -->
+<div id="loginSection" class="section login-bg">
+  <h3>🔒 أدخل الرمز السري</h3>
+  <input type="password" id="secretInput" placeholder="الرمز السري">
+  <button onclick="checkCode()">دخول</button>
+  <p id="msg"></p>
+</div>
+
+<div id="secretSection" class="section secret-bg" style="display:none;">
+  <h2>🎉 القسم الخاص</h2>
+  <p>هنا المحتوى السري بعد إدخال الرمز</p>
+</div>
+
+<!-- التقييم -->
+<section class="reviews">
+  <h2>آراء العملاء</h2>
+  <p>⭐️⭐️⭐️⭐️⭐️ متجر ممتاز</p>
+</section>
+
+<footer>
+  © 2025 DevYou
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
